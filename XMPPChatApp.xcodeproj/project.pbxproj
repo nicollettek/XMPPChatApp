@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AD7764699F6269365EB91FB /* Pods_XMPPChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225F8C519306DC44EA6164CE /* Pods_XMPPChatApp.framework */; };
+		AF5608BD1F9017800060C88E /* lib in Resources */ = {isa = PBXBuildFile; fileRef = AF5608BC1F9017800060C88E /* lib */; };
+		AF62E2BE1F8D77CC008F9695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62E2BD1F8D77CC008F9695 /* AppDelegate.swift */; };
+		AF62E2C01F8D77CC008F9695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62E2BF1F8D77CC008F9695 /* ViewController.swift */; };
+		AF62E2C21F8D77CC008F9695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF62E2C11F8D77CC008F9695 /* Assets.xcassets */; };
+		AF62E2C51F8D77CC008F9695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF62E2C31F8D77CC008F9695 /* Main.storyboard */; };
+		AF62E2CE1F8E078E008F9695 /* XMPPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62E2CD1F8E078E008F9695 /* XMPPController.swift */; };
+		AF62E2D01F8E07CE008F9695 /* MessageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62E2CF1F8E07CE008F9695 /* MessageDelegate.swift */; };
+		AFC0B8A21F8EAA610026E4CB /* ConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B8A11F8EAA610026E4CB /* ConnectionStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		225F8C519306DC44EA6164CE /* Pods_XMPPChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMPPChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5608BC1F9017800060C88E /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = XMPPChatApp/lib; sourceTree = "<group>"; };
+		AF62E2BA1F8D77CC008F9695 /* XMPPChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPPChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF62E2BD1F8D77CC008F9695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF62E2BF1F8D77CC008F9695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF62E2C11F8D77CC008F9695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF62E2C41F8D77CC008F9695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF62E2C61F8D77CC008F9695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF62E2C71F8D77CC008F9695 /* XMPPChatApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XMPPChatApp.entitlements; sourceTree = "<group>"; };
+		AF62E2CD1F8E078E008F9695 /* XMPPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPController.swift; sourceTree = "<group>"; };
+		AF62E2CF1F8E07CE008F9695 /* MessageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDelegate.swift; sourceTree = "<group>"; };
+		AFC0B8A11F8EAA610026E4CB /* ConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatus.swift; sourceTree = "<group>"; };
+		C821997A48F46A93543F0203 /* Pods-XMPPChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPPChatApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMPPChatApp/Pods-XMPPChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EEBC1F0361D05BAA827A1B6F /* Pods-XMPPChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPPChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPPChatApp/Pods-XMPPChatApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF62E2B71F8D77CC008F9695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD7764699F6269365EB91FB /* Pods_XMPPChatApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF62E2B11F8D77CC008F9695 = {
+			isa = PBXGroup;
+			children = (
+				AF5608BC1F9017800060C88E /* lib */,
+				AF62E2BC1F8D77CC008F9695 /* XMPPChatApp */,
+				AF62E2BB1F8D77CC008F9695 /* Products */,
+				F05EC3D99D978D2B37BE5FC7 /* Pods */,
+				D94A55FD307D8CB718F3CE4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF62E2BB1F8D77CC008F9695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF62E2BA1F8D77CC008F9695 /* XMPPChatApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF62E2BC1F8D77CC008F9695 /* XMPPChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				AF62E2D11F8E0828008F9695 /* SupportingFiles */,
+				AF62E2BF1F8D77CC008F9695 /* ViewController.swift */,
+				AF62E2CD1F8E078E008F9695 /* XMPPController.swift */,
+				AF62E2C31F8D77CC008F9695 /* Main.storyboard */,
+				AF62E2CF1F8E07CE008F9695 /* MessageDelegate.swift */,
+				AFC0B8A11F8EAA610026E4CB /* ConnectionStatus.swift */,
+				AF62E2C11F8D77CC008F9695 /* Assets.xcassets */,
+			);
+			path = XMPPChatApp;
+			sourceTree = "<group>";
+		};
+		AF62E2D11F8E0828008F9695 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AF62E2BD1F8D77CC008F9695 /* AppDelegate.swift */,
+				AF62E2C61F8D77CC008F9695 /* Info.plist */,
+				AF62E2C71F8D77CC008F9695 /* XMPPChatApp.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D94A55FD307D8CB718F3CE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225F8C519306DC44EA6164CE /* Pods_XMPPChatApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F05EC3D99D978D2B37BE5FC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C821997A48F46A93543F0203 /* Pods-XMPPChatApp.debug.xcconfig */,
+				EEBC1F0361D05BAA827A1B6F /* Pods-XMPPChatApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF62E2B91F8D77CC008F9695 /* XMPPChatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF62E2CA1F8D77CC008F9695 /* Build configuration list for PBXNativeTarget "XMPPChatApp" */;
+			buildPhases = (
+				2B09ABECD2D749D8D6F298BC /* [CP] Check Pods Manifest.lock */,
+				AF62E2B61F8D77CC008F9695 /* Sources */,
+				AF62E2B71F8D77CC008F9695 /* Frameworks */,
+				AF62E2B81F8D77CC008F9695 /* Resources */,
+				82DD00939F484671DAEFF58D /* [CP] Embed Pods Frameworks */,
+				10EDFE85F6968574A9BB495E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMPPChatApp;
+			productName = XMPPChatApp;
+			productReference = AF62E2BA1F8D77CC008F9695 /* XMPPChatApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF62E2B21F8D77CC008F9695 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Nicollette Karaivanova";
+				TargetAttributes = {
+					AF62E2B91F8D77CC008F9695 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AF62E2B51F8D77CC008F9695 /* Build configuration list for PBXProject "XMPPChatApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF62E2B11F8D77CC008F9695;
+			productRefGroup = AF62E2BB1F8D77CC008F9695 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF62E2B91F8D77CC008F9695 /* XMPPChatApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF62E2B81F8D77CC008F9695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5608BD1F9017800060C88E /* lib in Resources */,
+				AF62E2C21F8D77CC008F9695 /* Assets.xcassets in Resources */,
+				AF62E2C51F8D77CC008F9695 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10EDFE85F6968574A9BB495E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPPChatApp/Pods-XMPPChatApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B09ABECD2D749D8D6F298BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMPPChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82DD00939F484671DAEFF58D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XMPPChatApp/Pods-XMPPChatApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPPChatApp/Pods-XMPPChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF62E2B61F8D77CC008F9695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF62E2D01F8E07CE008F9695 /* MessageDelegate.swift in Sources */,
+				AFC0B8A21F8EAA610026E4CB /* ConnectionStatus.swift in Sources */,
+				AF62E2C01F8D77CC008F9695 /* ViewController.swift in Sources */,
+				AF62E2BE1F8D77CC008F9695 /* AppDelegate.swift in Sources */,
+				AF62E2CE1F8E078E008F9695 /* XMPPController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF62E2C31F8D77CC008F9695 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF62E2C41F8D77CC008F9695 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF62E2C81F8D77CC008F9695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF62E2C91F8D77CC008F9695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		AF62E2CB1F8D77CC008F9695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C821997A48F46A93543F0203 /* Pods-XMPPChatApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XMPPChatApp/XMPPChatApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ARS95VBX7M;
+				INFOPLIST_FILE = "$(SRCROOT)/XMPPChatApp/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicollette.XMPPChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AF62E2CC1F8D77CC008F9695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEBC1F0361D05BAA827A1B6F /* Pods-XMPPChatApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XMPPChatApp/XMPPChatApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ARS95VBX7M;
+				INFOPLIST_FILE = "$(SRCROOT)/XMPPChatApp/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicollette.XMPPChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF62E2B51F8D77CC008F9695 /* Build configuration list for PBXProject "XMPPChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF62E2C81F8D77CC008F9695 /* Debug */,
+				AF62E2C91F8D77CC008F9695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF62E2CA1F8D77CC008F9695 /* Build configuration list for PBXNativeTarget "XMPPChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF62E2CB1F8D77CC008F9695 /* Debug */,
+				AF62E2CC1F8D77CC008F9695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF62E2B21F8D77CC008F9695 /* Project object */;
+}
